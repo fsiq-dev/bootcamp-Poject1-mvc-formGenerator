@@ -1,0 +1,30 @@
+{
+  "name": "projeto01-reclacao-de-loja",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "html-pdf-node": "^1.0.7",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/fsiq/Projeto01-reclamacao-de-loja.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/fsiq/Projeto01-reclamacao-de-loja/issues"
+  },
+  "homepage": "https://gitlab.com/fsiq/Projeto01-reclamacao-de-loja#readme"
+}
