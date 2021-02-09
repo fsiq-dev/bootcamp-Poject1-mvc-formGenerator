@@ -1,0 +1,150 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+/*  */
+
+/* BODY */
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+/*  */
+
+/* HEADER DEFAULT */
+.top {
+    background-color: black;
+    height: 50px;
+    opacity: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#textTop {
+    opacity: 100%;
+    color: white;
+}
+.logo-box{
+    display: flex;
+    /* background-color: red; */
+    max-height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 350px;
+    height: 350px;
+}
+/*  */
+
+/* MENU NAV */
+.menu{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    
+}
+nav{
+    display: flex;
+    /* margin-left: 50px; */
+}
+ul{
+    list-style: none;
+}
+li{
+    text-decoration: overline;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+/*  */
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex: 1;
+}
+/*  */
+
+/* FOOTER */
+footer {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+    color: white;
+}
+/*  */
+
+/* CONTENT MAIN INDEX*/
+.imgBackground {
+    width: auto;
+    min-height: 300px;
+    max-height: 350px;
+    background-image: url("../css/src/shop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.shadow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    max-height: 350px;
+    background: rgb(0,0,0, 0.6);
+}
+.shadow span {
+    color: white;
+    background-color:rgb(255,255,255, 0.3);
+    border: 2px solid rgb(255,255,255, 0.5);
+    box-sizing: 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.texto{
+    width: 500px;
+}
+.doll img {
+    width: 320px;
+    height: 450px;
+}
+.box-btn{
+    position: absolute;
+    bottom: 200px;
+    width: 100%; 
+    height: auto;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.big-button {
+    width: 200px;
+    height: 80px;
+    color: white;
+    border-radius: 60px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(202, 60, 60);
+    /* position: absolute; */
+    left: 300px;
+    text-align: center;
+    line-height: 70px;
+    bottom: 200px;
+}
+/*  */
