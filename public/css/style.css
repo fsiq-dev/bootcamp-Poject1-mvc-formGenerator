@@ -69,8 +69,9 @@ a{
 main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 50vh;
     flex: 1;
+    overflow: auto;
 }
 /*  */
 
@@ -127,7 +128,6 @@ footer {
     position: absolute;
     bottom: 200px;
     width: 100%; 
-    height: auto;
 }
 .btn {
     display: flex;
@@ -141,10 +141,42 @@ footer {
     border-radius: 60px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     background: rgb(202, 60, 60);
-    /* position: absolute; */
     left: 300px;
     text-align: center;
     line-height: 70px;
-    bottom: 200px;
 }
 /*  */
+
+/* CONTENT FORMULARIO */
+.box-form {
+    display: flex;
+    justify-content: center;
+    /* background-color: rosybrown; */
+}
+.test {
+    background-color: #fff;
+    border: 2px #191919 solid;
+}
+.formGroup {
+    background: #fff;
+    /* border: 2px solid #191919; */
+    width: 500px;
+    padding: 5px 0px;
+    margin: 5px;
+}
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=tel] {
+    margin-top: 5px;
+    padding: 5px 0;
+    border: thin #eee solid;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 12px;
+}
+#textarea {
+    width: 500px;
+    height: 200px;
+    resize: none;
+}
