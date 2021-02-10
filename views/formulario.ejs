@@ -53,9 +53,9 @@
                             <label for="category">Categoria:</label>
                             <select name="category">
                                 <option value="default" disabled selected>Escolher</option>
-                                <option selected value="Eletronics">Eletronico</option>
-                                <option value="drinkAndFood">Comidas e Bebidas</option>
-                                <option value="auto">Automóvel</option>
+                                <% category.map((item) => { %>
+                                <option value="<%= item.value %>"> <%= item.options %> </option>
+                                <% }) %>
                             </select>
                         </div>
                         <div class="formGroup">
@@ -63,7 +63,7 @@
                             <textarea id="textarea" name="textarea" required>description</textarea>
                         </div>
                         <div class="formGroup">
-                            <input id="file" type="file" name="file" accept="image/png, image/jpeg">
+                            <input id="file" type="file" name="file" accept="image/*">
                         </div>
                     </fieldset>
                     <div>
@@ -76,5 +76,35 @@
         <p>©Bootcamp Infnet-2021 by:Felipe Siqueira</p>
     </footer>
 </body>
+<script>
 
+// //HELPER
+// const toBase64 = file => new Promise((resolve, reject) => {
+//     const reader = new FileReader();
+//     reader.readAsDataURL(file);
+//     reader.onload = () => resolve(reader.result);
+//     reader.onerror = error => reject(error);
+// });
+
+// let form = document.getElementById('form');
+// form.addEventListener('submit', (event)=> {
+//     event.preventDefault();
+
+//     const file = document.querySelector('#file').files[0];
+//        toBase64(file).then(data => {
+//         let viewModel = {
+//             img: data
+//         };
+//         let myHeaders = new Headers();
+//         myHeaders.append("Content-Type", "application/json");
+        
+//         fetch('/formulario', {
+//             method: 'POST',
+//             headers: myHeaders,
+//             body: JSON.stringify({img: data})
+//         })
+//     })
+// })
+
+</script>
 </html>
