@@ -25,52 +25,8 @@
     <main>
         <div class="box-form">
                 <form id="form" action="/formulario" method="POST">
-                    <fieldset class="test"><legend>Informações Pessoais</legend>
-                        <div class="formGroup">
-                            <label for="name">Nome:</label>
-                            <input value="Felipe" type="text" name="name" placeholder="Nome Sobrenome" required>
-                        </div>
-                        <div class="formGroup">
-                            <label for="email">E-mail:</label>
-                            <input value="user@email.com" type="email" name="email" placeholder="email@email.com" required>
-                        </div>
-                        <div class="formGroup">
-                            <label for="cpf">Cpf:</label>
-                            <input value="143.241.234-19" type="text" name="cpf" placeholder="000.000.00-00" required>
-                        </div>
-                        <div class="formGroup">
-                            <label for="phone">Telefone:</label>
-                            <input value="2499832423" type="tel" placeholder="(DDD)12345-6789" name="phone">
-                        </div>
-                    </fieldset>
-                    <fieldset class="test"><legend>Produto</legend>
-                        <div class="formGroup">
-                            <label for="order">Numero do Pedido:</label>
-                            <input type="text" name="order" value="14BR4256"required>
-                        </div>
-                        <div class="formGroup">
-                            <label for="type">Tipo do Produto:</label>
-                            <input type="radio" name="type" value="new">Novo
-                            <input type="radio" name="type" value="used" checked>Usado
-                        </div>
-                        <div class="formGroup">
-                            <label for="category">Categoria:</label>
-                            <select name="category">
-                                <option value="default" disabled selected>Escolher</option>
-                                <% category.map((item) => { %>
-                                <option value="<%= item.value %>"> <%= item.options %> </option>
-                                <% }) %>
-                            </select>
-                        </div>
-                        <div class="formGroup">
-                            <label for="textarea">Agora,conte seu problema:</label>
-                            <textarea id="textarea" name="textarea" required>description</textarea>
-                        </div>
-                        <div class="formGroup">
-                            <input id="upload" type="file" name="file" accept="image/*">
-                            <img id="preview" style="width: 50px">
-                        </div>
-                    </fieldset>
+                    <%- include('./form_slice/pessoais.ejs') %>
+                    <%- include('./form_slice/produto.ejs') %>
                     <div>
                         <button type="submit">enviar</button>
                     </div>
@@ -80,7 +36,7 @@
     <footer>
         <p>©Bootcamp Infnet-2021 by:Felipe Siqueira</p>
     </footer>
-</body> 
+</body>
 
 <!-- JQuery -->
 <script
@@ -88,7 +44,7 @@
     integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
     crossorigin="anonymous">
 </script>
-
+<!-- base64 -preview img -->
 <script>
 $(function(){
     $('#upload').change(function(){
@@ -96,11 +52,11 @@ $(function(){
         const fileReader= new FileReader;
         fileReader.onloadend = function(){
             $('#preview').attr('src', fileReader.result)
-            console.log(fileReader.result)
+            // console.log(fileReader.result)
         }
         fileReader.readAsDataURL(file)
     })
 })
 
-</script>
+</script> 
 </html>

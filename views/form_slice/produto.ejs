@@ -1,0 +1,29 @@
+<fieldset class="borderFieldset">
+  <legend>Produto</legend>
+  <div class="formGroup">
+    <label for="order">Numero do Pedido:</label>
+    <input type="text" name="order" value="14BR4256" required />
+  </div>
+  <div class="formGroup">
+    <label for="type">Tipo do Produto:</label>
+    <input type="radio" name="type" value="new" />Novo
+    <input type="radio" name="type" value="used" checked />Usado
+  </div>
+  <div class="formGroup">
+    <label for="category">Categoria:</label>
+    <select name="category">
+      <option value="default" disabled selected>Escolher</option>
+      <% category.map((item) => { %>
+      <option value="<%= item.value %>"><%= item.options %></option>
+      <% }) %>
+    </select>
+  </div>
+  <div class="formGroup">
+    <label for="textarea">Agora,conte seu problema:</label>
+    <textarea id="textarea" name="textarea" required>description</textarea>
+  </div>
+  <div class="formGroup">
+    <input id="upload" type="file" name="file" accept="image/*" />
+    <img id="preview" style="width: 50px" />
+  </div>
+</fieldset>

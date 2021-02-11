@@ -153,7 +153,7 @@ footer {
     justify-content: center;
     /* background-color: rosybrown; */
 }
-.test {
+.borderFieldset {
     background-color: #fff;
     border: 2px #191919 solid;
 }
@@ -170,7 +170,7 @@ input[type=email],
 input[type=tel] {
     margin-top: 5px;
     padding: 5px 0;
-    border: thin #eee solid;
+    border: thin black solid;
     border-radius: 5px;
     width: 100%;
     font-size: 12px;

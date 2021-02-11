@@ -57,7 +57,10 @@ export const formCtrl = {
 
         //TRANSFORMAR EM PDF
         let file = { content: htmlRenderized};
-        let options = {format: 'A4'};
+        let options = {
+            format: 'A4',
+            printBackground: true
+        };
     
         htmlToPdf.generatePdf(file, options)
         .then(pdfBuffer => {

@@ -3,19 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+    </style>
     <title>Document</title>
 </head>
 <body>
     <main>
-        <h1> <%= name %> </h1>
-        <h1> <%= email %> </h1>
-        <h1> <%= cpf %> </h1>
-        <h1> <%= phone %> </h1>
-        <h1> <%= order %> </h1>
-        <h1> <%= type %> </h1>
-        <h1> <%= category %> </h1>
-        <h1> <%= textarea %> </h1>
+        <div class="header">
+            <img id="logo" src="https://www.pngjoy.com/pngl/42/973650_gravity-falls-mystery-shack-hd-png-download.png">
+            <h1>Mystery Shack - Form</h1>
+        </div>
+        <p class="title">Lorem ipsum dolor sit amet</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius accusamus, ex placeat, eos fuga voluptates eaque, corrupti dolores quo a facilis impedit. Voluptate ea natus <strong>doloribus iure facilis sit.</strong> </p>
+        
+        
+        <div class="titleBox"><p class="title2">Informaçoes do Client</p></div>
+        <div class="client">
+            <p class="label">Nome do Client:   <span> <%= name %> </span> </p>
+            <p class="label">E-mail: <span> <%= email %> </span></p>
+            <p class="label">CPF: <span> <%= cpf %> </span></p>
+            <p class="label">Telefone: <span> <%= phone %> </span></p>
+        </div>
+        
+        <div class="titleBox"><p class="title2">Informaçoes do Produto</p></div>
+        <div class="produto">
+            <p class="label">Numero do Pedido:<span> <%= order %> </span></p>
+            <p class="label">Tipo do Produto:<span> <%= type %> </span></p>
+            <p class="label">Categoria do Protudo:<span> <%= category %> </span></p>
+        </div>
+
+        <div class="titleBox"><p class="title2">Historia</p></div>
+        <div class="textarea">
+        <p>  <%= textarea %> </p>
+        </div>
         <img src= 'data:image/png;base64, <%= img %>'>
     </main>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            outline: 0px;
+        }
+        body {
+            margin: 25px;
+        }
+        /*HEADER COM LOGO */
+        .header {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            
+        }
+        #logo{
+            width: 120px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        /* CORPO */
+        .title {
+            font-size: 26px;
+            font-family: 'Ubuntu', sans-serif;;
+        }
+        .title2{
+            color: white;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .titleBox{
+            margin-top: 20px;
+            background-color: #191919;
+        }
+        .label {
+            margin: 5px 0px 10px 0px;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            border: 1px solid black;
+            
+        }
+        .label span {
+            font-family: sans-serif;
+            color: black;
+        }
+        .textarea {
+            margin-top: 5px;
+            min-height: 200px;
+            background-color: #dededd;
+            border: 1px solid black;
+        }
+        /*  */
+    </style>
 </body>
 </html>
