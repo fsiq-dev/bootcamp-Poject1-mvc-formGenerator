@@ -44,8 +44,11 @@ export const formCtrl = {
             email: body.email,
             cpf: body.cpf,
             phone: body.phone,
+            order: body.order,
             type: typeResultado.descricao,
-            category: categoryResultado.descricao
+            category: categoryResultado.descricao,
+            textarea: body.textarea,
+            img: body.file
         };
         
         //TEMPLATE

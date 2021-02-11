@@ -45,6 +45,10 @@
                     </fieldset>
                     <fieldset class="test"><legend>Produto</legend>
                         <div class="formGroup">
+                            <label for="order">Numero do Pedido:</label>
+                            <input type="text" name="order" value="14BR4256"required>
+                        </div>
+                        <div class="formGroup">
                             <label for="type">Tipo do Produto:</label>
                             <input type="radio" name="type" value="new">Novo
                             <input type="radio" name="type" value="used" checked>Usado
@@ -63,7 +67,8 @@
                             <textarea id="textarea" name="textarea" required>description</textarea>
                         </div>
                         <div class="formGroup">
-                            <input id="file" type="file" name="file" accept="image/*">
+                            <input id="upload" type="file" name="file" accept="image/*">
+                            <img id="preview" style="width: 50px">
                         </div>
                     </fieldset>
                     <div>
@@ -75,36 +80,27 @@
     <footer>
         <p>©Bootcamp Infnet-2021 by:Felipe Siqueira</p>
     </footer>
-</body>
+</body> 
+
+<!-- JQuery -->
+<script
+    src="https://code.jquery.com/jquery-3.2.1.slim.js"
+    integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+    crossorigin="anonymous">
+</script>
+
 <script>
-
-// //HELPER
-// const toBase64 = file => new Promise((resolve, reject) => {
-//     const reader = new FileReader();
-//     reader.readAsDataURL(file);
-//     reader.onload = () => resolve(reader.result);
-//     reader.onerror = error => reject(error);
-// });
-
-// let form = document.getElementById('form');
-// form.addEventListener('submit', (event)=> {
-//     event.preventDefault();
-
-//     const file = document.querySelector('#file').files[0];
-//        toBase64(file).then(data => {
-//         let viewModel = {
-//             img: data
-//         };
-//         let myHeaders = new Headers();
-//         myHeaders.append("Content-Type", "application/json");
-        
-//         fetch('/formulario', {
-//             method: 'POST',
-//             headers: myHeaders,
-//             body: JSON.stringify({img: data})
-//         })
-//     })
-// })
+$(function(){
+    $('#upload').change(function(){
+        const file = $(this)[0].files[0];
+        const fileReader= new FileReader;
+        fileReader.onloadend = function(){
+            $('#preview').attr('src', fileReader.result)
+            console.log(fileReader.result)
+        }
+        fileReader.readAsDataURL(file)
+    })
+})
 
 </script>
 </html>
