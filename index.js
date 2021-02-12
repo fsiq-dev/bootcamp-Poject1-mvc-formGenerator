@@ -4,8 +4,8 @@ import path from 'path'
 const __dirname = path.resolve();
 import bodyParser from 'body-parser';
 
-app.use(bodyParser.json({limit: "5mb"}));
-app.use(bodyParser.urlencoded({ limit: "5mb", extended: true, parameterLimit:50000 }));
+app.use(bodyParser.json({limit: "2mb"}));
+app.use(bodyParser.urlencoded({ limit: "2mb", extended: true, parameterLimit:50000 }));
 
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname + '/public')));

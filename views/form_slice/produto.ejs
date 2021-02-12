@@ -2,12 +2,12 @@
   <legend>Produto</legend>
   <div class="formGroup">
     <label for="order">Numero do Pedido:</label>
-    <input type="text" name="order" value="14BR4256" required />
+    <input type="text" name="order" required />
   </div>
   <div class="formGroup">
     <label for="type">Tipo do Produto:</label>
     <input type="radio" name="type" value="new" />Novo
-    <input type="radio" name="type" value="used" checked />Usado
+    <input type="radio" name="type" value="used" />Usado
   </div>
   <div class="formGroup">
     <label for="category">Categoria:</label>
@@ -20,10 +20,10 @@
   </div>
   <div class="formGroup">
     <label for="textarea">Agora,conte seu problema:</label>
-    <textarea id="textarea" name="textarea" required>description</textarea>
+    <textarea id="textarea" name="textarea" required></textarea>
   </div>
   <div class="formGroup">
     <input id="upload" type="file" name="file" accept="image/*" />
-    <img id="preview" style="width: 50px" />
+    <img id="preview" name="preview" style="width: 50px" />
   </div>
 </fieldset>

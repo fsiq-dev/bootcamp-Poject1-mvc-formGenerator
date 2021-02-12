@@ -1,8 +1,8 @@
 import fs from 'fs';
 import ejs from 'ejs';
-import {typeModel} from '../models/type-model.js'
-import {categoryModel} from '../models/category-model.js'
-import htmlToPdf from 'html-pdf-node'
+import {typeModel} from '../models/type-model.js';
+import {categoryModel} from '../models/category-model.js';
+import htmlToPdf from 'html-pdf-node';
 
 export const formCtrl = {
     get: (req,res) => {
@@ -34,7 +34,6 @@ export const formCtrl = {
     post: (req,res) => {
         console.log(req.body);
         const body = req.body;
-        
         // view model para render formulario
         const typeResultado = typeModel.getById(body.type)
         const categoryResultado = categoryModel.getById(body.category)
@@ -49,6 +48,7 @@ export const formCtrl = {
             category: categoryResultado.descricao,
             textarea: body.textarea,
             img: body.file
+            
         };
         
         //TEMPLATE

@@ -9,9 +9,8 @@ router.get('/', (req,res) => {
 })
 router.get('/formulario', get);
 router.post('/formulario', post);
-
-// router.get('/formulario', (req,res) => {
-//     res.render('formulario')
-// })
+router.get('/sobre',(req,res)=>{
+    res.render('sobre')
+})
 
 export default router;
