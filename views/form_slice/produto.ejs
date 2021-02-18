@@ -11,8 +11,8 @@
   </div>
   <div class="formGroup">
     <label for="category">Categoria:</label>
-    <select name="category">
-      <option value="default" disabled selected>Escolher</option>
+    <select name="category" required>
+      <!-- <option value="default" disabled>Selecione..</option> -->
       <% category.map((item) => { %>
       <option value="<%= item.value %>"><%= item.options %></option>
       <% }) %>

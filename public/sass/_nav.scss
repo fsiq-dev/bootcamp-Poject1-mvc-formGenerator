@@ -1,0 +1,25 @@
+/* MENU NAV */
+.menu{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    
+    nav{
+        display: flex;
+        /* margin-left: 50px; */
+        ul{
+            list-style: none;
+            li{
+                text-decoration: overline;
+                margin-top: 20px;
+                a{
+                    text-decoration: none;
+                    font-size: 1.5em;
+                    color: black;
+                }
+            }
+        }
+    }
+    
+}
+/*  */

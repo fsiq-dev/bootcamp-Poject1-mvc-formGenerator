@@ -1,0 +1,56 @@
+/* CONTENT FORMULARIO */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-form {
+    display: flex;
+    justify-content: center;
+    /* background-color: rosybrown; */
+}
+.borderFieldset {
+    background-color: #fff;
+    border: 2px #191919 solid;
+    margin-top: 10px;
+}
+.formGroup {
+    background: #fff;
+    /* border: 2px solid #191919; */
+    width: 500px;
+    padding: 5px 0px;
+    margin: 5px;
+}
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=tel] {
+    margin-top: 5px;
+    padding: 5px 0;
+    border: thin black solid;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 12px;
+}
+input[type="file"] {
+    font-size: 14px;
+    color: rgb(153,153,153);
+}
+#textarea {
+    width: 500px;
+    height: 200px;
+    resize: none;
+}
+
+.btn-submit{
+    width: 100px;
+    height: 30px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;  
+}

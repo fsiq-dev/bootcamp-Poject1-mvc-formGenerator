@@ -1,0 +1,70 @@
+/* CONTENT MAIN INDEX*/
+.imgBackground {
+    width: auto;
+    min-height: 300px;
+    max-height: 350px;
+    background-image: url("../css/src/shop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    .shadow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
+        max-height: 350px;
+        background: rgb(0,0,0, 0.6);
+        
+        span {
+            color: white;
+            background-color:rgb(255,255,255, 0.3);
+            border: 2px solid rgb(255,255,255, 0.5);
+            box-sizing: 20px;
+        }
+    }
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.doll img {
+    width: 320px;
+    height: 450px;
+}
+
+.box-btn{
+    position: absolute;
+    bottom: 200px;
+    width: 100%; 
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 60px;
+    color: white;
+    border-radius: 10px;
+    background: rgb(255, 99, 71);
+    text-decoration: none;
+    margin-left: 300px;
+    font-size: 24px;
+
+    &:hover {
+        background-color: rgb(255,0,0);
+        transition: 1s;
+    }
+}
+/*  */

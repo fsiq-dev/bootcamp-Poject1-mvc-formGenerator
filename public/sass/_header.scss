@@ -1,0 +1,28 @@
+/* HEADER DEFAULT */
+.top {
+    background-color: black;
+    height: 50px;
+    opacity: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    #textTop {
+        opacity: 100%;
+        color: white;
+    }
+}
+
+.logo-box{
+    display: flex;
+    /* background-color: red; */
+    max-height: 350px;
+    justify-content: center;
+    align-items: center;
+    
+    .logo {
+        width: 350px;
+        height: 350px;
+    }
+}
+/*  */
