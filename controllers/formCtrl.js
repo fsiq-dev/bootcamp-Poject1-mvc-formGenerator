@@ -34,6 +34,7 @@ export const formCtrl = {
     post: (req,res) => {
         console.log(req.body);
         const body = req.body;
+        console.log(body.preview);
         // view model para render formulario
         const typeResultado = typeModel.getById(body.type)
         const categoryResultado = categoryModel.getById(body.category)
@@ -47,8 +48,7 @@ export const formCtrl = {
             type: typeResultado.descricao,
             category: categoryResultado.descricao,
             textarea: body.textarea,
-            img: body.file
-            
+            img: body.hidden
         };
         
         //TEMPLATE

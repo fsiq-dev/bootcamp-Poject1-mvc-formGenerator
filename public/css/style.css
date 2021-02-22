@@ -224,8 +224,30 @@ input[type=file] {
 }
 
 .SobreImg {
-  width: 350px;
   height: 300px;
+  width: 350px;
+}
+
+.links {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.links-a {
+  text-decoration: none;
+  color: #000;
+}
+
+.links-trello {
+  height: 25px;
+  width: 25px;
+}
+
+.link-github {
+  height: 25px;
+  width: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
