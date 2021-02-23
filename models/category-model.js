@@ -1,9 +1,5 @@
 const data = [
     {
-        id: 'Choose',
-        descricao: 'Selecione..'
-    },
-    {
         id: 'Eletronics',
         descricao: 'Eletronicos'
     },

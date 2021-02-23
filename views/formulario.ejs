@@ -49,7 +49,6 @@ const hiddenField = document.getElementById("hiddenField");
 reader.onload = e => {
     preview.src = e.target.result;
     hiddenField.value = e.target.result;
-    console.log(hiddenField);
 }
 
 fileInput.addEventListener('change', e => {

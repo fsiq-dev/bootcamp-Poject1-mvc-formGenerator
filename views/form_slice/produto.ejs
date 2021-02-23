@@ -12,7 +12,7 @@
   <div class="formGroup">
     <label for="category">Categoria:</label>
     <select name="category" required>
-      <!-- <option value="default" disabled>Selecione..</option> -->
+      <option value="" selected disabled>Selecione..</option>
       <% category.map((item) => { %>
       <option value="<%= item.value %>"><%= item.options %></option>
       <% }) %>
@@ -23,8 +23,8 @@
     <textarea id="textarea" name="textarea" required></textarea>
   </div>
   <div class="formGroup">
-    <input id="upload" type="file" name="file" accept="image/*" />
+    <input id="upload" type="file" name="upload" accept="image/*" />
     <input id="hiddenField" name="hidden" type="hidden">
-    <img id="preview" style="width: 75px; height: 75px;">
+    <img id="preview" src="http://placehold.it/75X75" style="width: 75px; height: 75px;">
   </div>
 </fieldset>

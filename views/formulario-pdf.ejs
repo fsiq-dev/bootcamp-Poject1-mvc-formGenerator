@@ -39,7 +39,9 @@
         <div class="textarea">
         <p>  <%= textarea %> </p>
         </div>
-        <img src='<%= img %>'>
+        <div class="imgArea">
+            <img class="img-pdf" src='<%= img %>'>
+        </div>
     </main>
 
     <style>
@@ -93,6 +95,17 @@
             min-height: 200px;
             background-color: #dededd;
             border: 1px solid black;
+        }
+        /*  */
+        /* IMAGE PDF */
+        .imgArea {
+            margin-top: 5px;
+            height: 360px;
+        }
+        .img-pdf{
+            width: auto;
+            height: 360px;
+            object-fit: cover;
         }
         /*  */
     </style>
